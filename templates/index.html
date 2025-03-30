@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Analysis Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WhatsApp Chat Analysis Tool</h1>
+            <p>Gain insights from your WhatsApp chats with comprehensive analysis and visualizations.</p>
+        </header>
+
+        <section class="info-section">
+            <h2>Step 1: Export Your WhatsApp Chat</h2>
+            <p>To get started, you need to export your WhatsApp chat. Follow these simple steps:</p>
+            <ol>
+                <li>Open the chat you want to export in WhatsApp.</li>
+                <li>Tap on the three dots in the upper-right corner to open the menu.</li>
+                <li>Select 'More' and then 'Export chat'.</li>
+                <li>Choose whether to include media files or not.</li>
+                <li>Save the exported chat file (usually in .txt format) to your device.</li>
+            </ol>
+        </section>
+
+        <section class="info-section">
+            <h2>Step 2: Upload Your Chat File</h2>
+            <p>Once you have your exported chat file, you can upload it for analysis:</p>
+            <ol>
+                <li>Click the 'Choose File' button to select your exported chat file.</li>
+                <li>Click the 'Upload' button to submit the file.</li>
+                <li>Wait for the analysis to complete and view your results.</li>
+            </ol>
+        </section>
+
+        <section class="info-section">
+            <h2>What to Expect from the Analysis</h2>
+            <p>Our analysis provides detailed insights into your chat data:</p>
+            <ul>
+                <li><strong>Message Frequency by Sender:</strong> Visualize how many messages each participant has sent.</li>
+                <li><strong>Sentiment Analysis:</strong> View the distribution of positive, negative, and neutral messages.</li>
+                <li><strong>Formality Analysis:</strong> See whether messages are formal or informal.</li>
+                <li><strong>Texts Per Time Period:</strong> Examine the number of texts sent daily, weekly, monthly, and yearly.</li>
+                <li><strong>Summary Statistics:</strong> Get key metrics like the number of unique senders and the total number of messages.</li>
+            </ul>
+        </section>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept=".txt" required>
+            <button type="submit">Upload and Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
+

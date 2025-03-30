@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Chat Analysis Results</h1>
+        
+        <!-- Message Frequency by Sender -->
+        <h2>Message Frequency by Sender</h2>
+        <img src="{{ url_for('static', filename='message_frequency.png') }}" alt="Message Frequency">
+        
+        <!-- Sentiment Distribution -->
+        <h2>Sentiment Distribution</h2>
+        <img src="{{ url_for('static', filename='sentiment_distribution.png') }}" alt="Sentiment Distribution">
+        
+        <!-- Formality Distribution -->
+        <h2>Formality Distribution</h2>
+        <img src="{{ url_for('static', filename='formality_distribution.png') }}" alt="Formality Distribution">
+
+        <!-- Texts per Day, Week, Month, and Year -->
+        <h2>Texts per Day, Week, Month, and Year</h2>
+        <img src="{{ url_for('static', filename='texts_per_day.png') }}" alt="Texts per Day">
+        <img src="{{ url_for('static', filename='texts_per_week.png') }}" alt="Texts per Week">
+        <img src="{{ url_for('static', filename='texts_per_month.png') }}" alt="Texts per Month">
+        <img src="{{ url_for('static', filename='texts_per_year.png') }}" alt="Texts per Year">
+
+        <!-- New Section: Response Time Analysis -->
+        
+
+        <!-- New Section: Topic Modeling -->
+        <div>
+            <h2>Topics Identified</h2>
+            <ul>
+                {% for topic in topics %}
+                    <li>{{ topic }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- Analysis Summary -->
+        <h2>Summary</h2>
+        <pre>{{ summary }}</pre>
+        
+        <a href="{{ url_for('upload_file') }}">Upload another file</a>
+    </div>
+</body>
+</html>
