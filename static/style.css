@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    color: #f5f5f5;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* New Section Styles for Response Time and Topics */
+.response-time, .topics {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.response-time h3, .topics h3 {
+    color: #f5f5f5;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.response-time p, .topics ul {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+.response-time p {
+    margin-top: 10px;
+}
+
+.topics ul {
+    padding-left: 20px;
+}
+
+.topics li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.topics li:before {
+    content: "• ";
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}

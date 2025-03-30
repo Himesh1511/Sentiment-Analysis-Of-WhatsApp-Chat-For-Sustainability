@@ -1,0 +1,13 @@
+Analysis Summary:
+Total messages: 16
+Positive messages: 7
+Negative messages: 0
+Neutral messages: 9
+Average Response Time: 3.75 minutes
+Fastest Response: 0.0 minutes
+Slowest Response: 5.0 minutes
+
+Topics Identified:
+Topic 1: trip, weekend, know, let, looking, awesome, forward, checklist, check, ll
+Topic 2: heard, great, finalize, dates, book, tickets, yes, checklist, let, looking
+Topic 3: ll, resort, think, weather, meals, booking, train, need, prepared, sounds
